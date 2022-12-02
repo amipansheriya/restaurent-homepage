@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 100%;
+    margin: 0 !important;
+}
+.logo{
+    height: 170px !important;
+    width: 100%;
+    background-color: #3A0C01;
+    padding: 0;
+}
+.logo img{
+    width:190px !important;
+}
+.navbar{
+    height: 70px;
+    /* padding: 0 !important; */
+    background-color: #2D0900;
+    width: 100%;
+    padding: 0;
+ 
+}
+.mainmenu{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.mainmenu li a{
+    color: #9B6D3C;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 20px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+.mainmenu li a:hover{
+    color: rgb(255, 255, 255,0.8);
+}
+@media screen and (min-width: 600px) and (max-width: 778px)  {
+    .logo{
+        height: 130px !important;
+        width: 100% !important;
+    }
+    .logo img{
+        width:150px !important;
+    }
+    .mainmenu{
+        display: none !important;
+    }
+    .menu li .submenu{
+        display: none !important;
+    }
+    .menu .menu-icon:hover .submenu{
+        display: block !important;
+    }
+  }
+  @media screen and (max-width: 600px)  {
+    .logo{
+        height: 70px !important;
+        width: 100% !important;
+    }
+    .logo img{
+        width:100px !important;
+    }
+    .mainmenu{
+        display: none !important;
+    }
+    .menu li .submenu{
+        display: none !important;
+    }
+    .menu .menu-icon:hover .submenu{
+        display: block !important;
+    }
+    .submenu{
+        width: 200px !important;
+    }
+  }
+ 
+.menu .menu-icon a{
+    color: #9B6D3C;
+    list-style: none;
+    text-decoration: none;
+    height: 100% !important;
+    width: 100% !important;
+    display: block;
+    padding: 10px 20px;
+    text-align: center !important;
+    border-bottom: 1px solid #9B6D3C;
+}
+.menu li{
+    list-style: none;
+}
+.menu{
+    position: relative !important;
+    max-width: max-content;
+}
+.menu .menu-icon > a{
+    font-size: 30px;
+    border: none !important;
+}
+.submenu{
+    position: absolute !important;
+    top:70px !important;
+    background-color: #2D0900;
+    z-index: 21;
+    width: 400px;
+    padding: 0 !important;
+}
+.submenu li a:hover{
+    background-color: #9B6D3C;
+    color: #3A0C01;
+}
